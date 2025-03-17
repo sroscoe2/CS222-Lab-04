@@ -22,9 +22,9 @@ This lab also contains images of UML digrams. They are briefly explained [here](
 1. Clone this lab from Github. Use this link: <https://github.com/sroscoe2/CS222-Lab-04.git> Refer to Lab 1 if you need a refresher for how to do so. REMEMBER: when importing, name your folder `firstnameLI-CS222-Lab-04`
 
 ### Beginning (`Author.java`)
-
+<p align="center">
 <img src="img/Author.png" style="display: block; margin: 0 auto">
-
+</p>
 2. Open `Author.java`. Much of the class has been provided to you already. **Fix the `get...()` methods**, which currently return `null`. They should instead return the appropriate field.
 
 3. [Hints](#how-to-generate-class-members-in-your-ide) Add a constructor to the `Author` class. The constructor should have the following signature:
@@ -41,7 +41,9 @@ public Author(String firstName, String lastName) {
 
 ### Middle (`Book.java`)
 
+<p align="center">
 <img src="img/Book.png" style="display: block; margin: 0 auto">
+</p>
 
 6. [Hints](#how-to-generate-class-members-in-your-ide) Open `Book.java`. Fields have been provided to you, but no methods. Write getter & setter methods, or have your IDE generate them for you.
 
@@ -73,7 +75,9 @@ de Cervantes, Miguel. "Don Quijote".  978-0393315097. Published 1996-09-17.
 
 11. The Library class file is provided, but it is completely empty. Implement it based on the UML diagram seen below. [UML Explained](#uml-diagram)
 
+<p align="center">
 <img src="img/Library.png" style="display: block; margin: 0 auto">
+</p>
 
 Ensure you have:
 
@@ -156,12 +160,15 @@ Any Java class can have a UML diagram associated with it.
 
 Here is an example of our `MagnaCarta` class:
 
+<p align="center">
 <img src="img/MagnaCarta.png" style="display: block; margin: 0 auto">
+</p>
 
 And of our `IntCell` class:
 
+<p align="center">
 <img src="img/IntCell.png" style="display: block; margin: 0 auto">
-
+</p>
 
 Here are some things to know about the diagram:
 
@@ -175,9 +182,10 @@ Here are some things to know about the diagram:
 
 - The icon shape imparts meaning of the member's visibility. Red squares represent private, yellow diamonds represent protected, blue triangles represent package-visible, and green circles represent public.
 
+<p align="center">
 <img src="img/iconMeaning.png" style="display: block; margin: 0 auto">
-
-<p style="text-align: center;">Source: <a href="https://plantuml.com/class-diagram">PlantUML Documentation</a></p>
+Source: <a href="https://plantuml.com/class-diagram">PlantUML Documentation</a>
+</p>
 
 
 - **Constructors** are typically listed in the methods section. However, constructors *are not* methods. Constructors will not have a return type.
