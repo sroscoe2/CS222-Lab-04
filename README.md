@@ -184,6 +184,8 @@ Here are some things to know about the diagram:
 
 <p align="center">
 <img src="img/iconMeaning.png" style="display: block; margin: 0 auto">
+</p>
+<p align="center">
 Source: <a href="https://plantuml.com/class-diagram">PlantUML Documentation</a>
 </p>
 
