@@ -25,6 +25,7 @@ This lab also contains images of UML digrams. They are briefly explained [here](
 <p align="center">
 <img src="img/Author.png" style="display: block; margin: 0 auto">
 </p>
+
 2. Open `Author.java`. Much of the class has been provided to you already. **Fix the `get...()` methods**, which currently return `null`. They should instead return the appropriate field.
 
 3. [Hints](#how-to-generate-class-members-in-your-ide) Add a constructor to the `Author` class. The constructor should have the following signature:
