@@ -8,14 +8,12 @@ public class Author {
     private String lastName;
     
     /**
-     * Author constructor.
+     * Author constructor goes here.
      * @param firstName
      * @param lastName
      */
-    public Author(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
+
+    //TODO Add Author constructor.
     
     /**
      * Getter method for author's first name.
