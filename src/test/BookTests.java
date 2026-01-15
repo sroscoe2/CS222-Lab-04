@@ -35,4 +35,11 @@ public class BookTests {
 		Assertions.assertEquals("Dabos, Christelle. \"A Winter's Promise\". 978-1609454838. Published 2018-09-25.", b.toString());
 	}
 
+	@Test
+	public void LocalDateTest(){
+		// tests that the student did not change publishDate to a String.
+		Author a = new Author("Christelle", "Dabos");
+		Book b = new Book("A Winter's Promise", a, "978-1609454838", "2018-09-25");
+
+		Assertions.assertTrue(b.getPublishDate() instanceof LocalDate);
 }
