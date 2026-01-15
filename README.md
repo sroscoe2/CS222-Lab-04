@@ -58,7 +58,9 @@ public Book(String title, Author author, String isbn, String publishDate) {
 }
 ```
 
-9. [Hints](#how-to-print-an-object) Create and add a `toString()` method which prints information in the following format:
+9. [Hint](#localdate-explanation) You likely now have an error in your constructor: the `publishDate` parameter is a `String`, but the Book's field should be of type `LocalDate`. **Do not change the field's type.** Add code in your constructor to convert the `String` to a `LocalDate`.
+
+10. [Hints](#how-to-print-an-object) Create and add a `toString()` method which prints information in the following format:
 
 ```txt
 [Author]. "[Title]". [ISBN]. Published [PublishDate].
@@ -70,11 +72,11 @@ For example, the book "Don Quijote" by Miguel de Cervantes, (which was translate
 de Cervantes, Miguel. "Don Quijote".  978-0393315097. Published 1996-09-17.
 ```
 
-10. Run `BookTests.java` and ensure all test cases pass.
+11. Run `BookTests.java` and ensure all test cases pass.
 
 ### End (`Library.java`)
 
-11. The Library class file is provided, but it is completely empty. Implement it based on the UML diagram seen below. [UML Explained](#uml-diagram)
+12. The Library class file is provided, but it is completely empty. Implement it based on the UML diagram seen below. [UML Explained](#uml-diagram)
 
 <p align="center">
 <img src="img/Library.png" style="display: block; margin: 0 auto">
@@ -111,11 +113,11 @@ Library:
 3. Dabos, Christelle. "A Winter's Promise". 978-1609454838. Published 2018-09-25.
 ```
 
-12. Run `LibraryTests.java` and ensure all test cases pass.
+13. Run `LibraryTests.java` and ensure all test cases pass.
 
 ### Finishing Up
 
-13. Zip your project folder and turn it into Canvas. Refer to Lab 1 if you need a refresher for how to do so.
+14. Zip your project folder and turn it into Canvas. Refer to Lab 1 if you need a refresher for how to do so.
 
 [Go back to the top](#instructions)
 
