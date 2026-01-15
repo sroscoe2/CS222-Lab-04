@@ -2,6 +2,7 @@ package test;
 
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
+import java.time.LocalDate;
 
 import main.Author;
 import main.Book;
@@ -24,15 +25,15 @@ public class BookTests {
 		b.setTitle("The Lightning Thief");
 		b.setISBN("978-0786856299");
 		b.setPublishDate("2005-06-28");
-		Assertions.assertEquals("The Lightning Thief", b.getTitle());
-		Assertions.assertEquals("978-0786856299", b.getISBN());
+		Assertions.assertEquals("The Lightning Thief", b.getTitle(),"Check your Title getters and setters.");
+		Assertions.assertEquals("978-0786856299", b.getISBN(),"Check your ISBN getters and setters.");
 	}
 
 	@Test
 	public void BookTest03() {
 		Author a = new Author("Christelle", "Dabos");
 		Book b = new Book("A Winter's Promise", a, "978-1609454838", "2018-09-25");
-		Assertions.assertEquals("Dabos, Christelle. \"A Winter's Promise\". 978-1609454838. Published 2018-09-25.", b.toString());
+		Assertions.assertEquals("Dabos, Christelle. \"A Winter's Promise\". 978-1609454838. Published 2018-09-25.", b.toString(),"Some aspect of printing a Book isn't working.");
 	}
 
 	@Test
@@ -41,5 +42,6 @@ public class BookTests {
 		Author a = new Author("Christelle", "Dabos");
 		Book b = new Book("A Winter's Promise", a, "978-1609454838", "2018-09-25");
 
-		Assertions.assertTrue(b.getPublishDate() instanceof LocalDate);
+		Assertions.assertTrue(b.getPublishDate() instanceof LocalDate,"You converted publishDate to a String! :("));
+	}
 }
