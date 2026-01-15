@@ -58,7 +58,7 @@ public Book(String title, Author author, String isbn, String publishDate) {
 }
 ```
 
-9. [Hint](#localdate-explanation) You likely now have an error in your constructor: the `publishDate` parameter is a `String`, but the Book's field should be of type `LocalDate`. **Do not change the field's type.** Add code in your constructor to convert the `String` to a `LocalDate`.
+9. [Hint](#localdate-explanation) You likely now have an error in your constructor: The constructor and setPublishDate parameters are Strings, but the field's type is LocalDate. This is not a mistake! Where necessary, convert the `String` publishDate to a `LocalDate` *without changing the type of the parameters or field.*  Add code in your constructor and in `setPublishDate` to convert the `String` to a `LocalDate`.
 
 10. [Hints](#how-to-print-an-object) Create and add a `toString()` method which prints information in the following format:
 
